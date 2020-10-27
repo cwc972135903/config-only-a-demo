@@ -1,0 +1,14 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    remote-ip-header: x-forwarded-for
+  use-forward-headers: true
+spring:
+  aop:
+    proxy-target-class: true
+    auto: true
+  rabbitmq:
+    host: paascloud-mq-rabbit
+    port: 15672
+    username: cwc
+    password: 123456
